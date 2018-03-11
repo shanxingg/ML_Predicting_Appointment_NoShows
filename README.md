@@ -4,9 +4,7 @@ A person makes a doctor appointment, receives all the instructions and no-show. 
 
 — Why do 20% of patients miss their scheduled appointments?
 
-110k medical appointments with its 14 variables (characteristics). Variable names are self-explanatory.
-
-Dataset from: https://www.kaggle.com/joniarroba/noshowappointments.<br>
+In this analysis report, I performed data exploratory analysis to explore the reasons that may cause no-shows. I used different techniques to combat the imbalanced classes and also build machine learning modles to further predict this phenomena.
 
 [Access the notebook in jupyter nbviewer](https://nbviewer.jupyter.org/github/shanxingg/ML_Medical_Appoinment_NoShows/blob/master/Medical_Appointment_NoShows.ipynb)<br>
 
@@ -66,25 +64,26 @@ Dataset from: https://www.kaggle.com/joniarroba/noshowappointments.<br>
 
 ## **Visualization Excerpts**
 
-### 1. Candlestick Chart for Bitcoin
-This notebook used plotly to visually show bitcoin stock price during the period from Jan. 2017 to Mar. 2018.<br>
+### 1. Class Imbalance Problem
 
-![Candlestick](https://user-images.githubusercontent.com/32560872/37240662-81868c64-2403-11e8-8812-ddad29c2fa9e.png)
+![Imbalance](https://user-images.githubusercontent.com/32560872/37251478-b6496094-24c5-11e8-9993-bceef0e0116f.png)
+From the above chart we see that there are around 80% of the patients who have turned up. We see a clear class imbalance problem here. A naive approach of predicting that every one shows up gives us an accuracy of 0.8.<br>
 
+### 2. Show-up Rate V.S. Awaiting Days
 
-### 2. Price Fluctuation of Cryptocurrencies
-This notebook used matplotlib to visually show opening, closing, highest, and lowest stock price for each of the cryptocurrency.<br>
+![Awaiting_days](https://user-images.githubusercontent.com/32560872/37251502-1cc5de42-24c6-11e8-8ff9-3d9f4e6f8246.png)
+Although the entire distribution of Showup Rate V.S. Awaiting Days does not show a strong relationship, awaiting time for less than or equal to 10 days show a distinctly negative relationship. Especially, people who scheduled his/her appoinment on the same day will have a obviously high show-up rate and this type of situation represent 34.89% of data in entire data set.<br>
 
-![Price_Fluctuation](https://user-images.githubusercontent.com/32560872/37240755-811b5844-2404-11e8-8add-7acc17e7b9ce.png)
+### 3. Show-up Rate V.S. Age
 
+![Correlation_Heatmap](https://user-images.githubusercontent.com/32560872/37251518-6a03e88e-24c6-11e8-916f-ae39e356b3ac.png)
+From the above Boxplot we can see that the Median Age is around 35 and the IQR is between 18 and 55. Though the BoxPlot shows few datapoints as outliers we will not consider them as true outliers for this case.
+The Scatter plot of Show-up Rate V.S. Age shows an obvious piecewise relationship:
+ - Age 0-14: negatively related between Age and Show-up Rate
+ - Age 15-65: positively related between Age and Show-up Rate
+ - Age above 65: no clear relationship<br>
 
-### 3. Correlation Heatmap of Cryptocurrencies
-This notebook used seaborn to visually show pearson correlation coefficient to explore if BitCoin price influences price of other cryptocurrencies.<br>
+### 4. Show/NoShow for Females and Males
 
-![Correlation_Heatmap](https://user-images.githubusercontent.com/32560872/37240849-9fe03122-2405-11e8-8a14-2e7833285f57.png)
-
-
-### 4. Prices Prediction for Bitcoin
-This notebook used matplotlib to visually show 30-days price prediction for Bitcoin.<br>
-
-![Prediction](https://user-images.githubusercontent.com/32560872/37240880-0f18a8d0-2406-11e8-92cf-e97e42fd132a.png)
+![Prediction](https://user-images.githubusercontent.com/32560872/37251541-cce885ea-24c6-11e8-8dfa-40f750e63e59.png)
+From the above visualization we can clearly see that 'Female' patients usually have more appointments that 'Male' patients. So, Gender might be an important factor. But if we closely look at the NoShow distribution across Male's and Female's it is almost the same. So, Gender may not play an important role in determining if a patient comes for a visit or not.
