@@ -1,4 +1,4 @@
-# **Predicting Medical Appoinment No-shows**
+# **Predicting Medical Appointment No-shows**
 
 A person makes a doctor appointment, receives all the instructions and no-show. Who to blame?
 
