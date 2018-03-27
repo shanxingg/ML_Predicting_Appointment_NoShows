@@ -6,7 +6,7 @@ A person makes a doctor appointment, receives all the instructions and no-show. 
 
 In this analysis report, I performed data exploratory analysis to explore the reasons that may cause no-shows. I used different techniques to combat the imbalanced classes and also build machine learning modles to further predict this phenomena.
 
-[Access the notebook in jupyter nbviewer](https://nbviewer.jupyter.org/github/shanxingg/ML_Predicting_Appointment_NoShows/blob/master/Medical_Appointment_NoShows.ipynb)<br>
+[Access the notebook in jupyter nbviewer](https://nbviewer.jupyter.org/github/shanxingg/ML_Predicting_Appointment_NoShows/blob/master/.ipynb_checkpoints/Medical_Appointment_NoShows-checkpoint.ipynb)<br>
 
 ![Doctor](https://www.questionpro.com/blog/wp-content/uploads/2015/07/preguntas_y_respuestas_2.jpg)<br><br>
 
@@ -14,17 +14,17 @@ In this analysis report, I performed data exploratory analysis to explore the re
 
 ## **Table of Content**
 
-[1. Load Data Set and Python Packages](https://nbviewer.jupyter.org/github/shanxingg/ML_Predicting_Appointment_NoShows/blob/master/Medical_Appointment_NoShows.ipynb#1)
+[1. Load Data Set and Python Packages](https://nbviewer.jupyter.org/github/shanxingg/ML_Predicting_Appointment_NoShows/blob/master/.ipynb_checkpoints/Medical_Appointment_NoShows-checkpoint.ipynb#1)
  - Load Python Packages
  - Load and Display Data Set
  
-[2. Data Quality Assessment](https://nbviewer.jupyter.org/github/shanxingg/ML_Predicting_Appointment_NoShows/blob/master/Medical_Appointment_NoShows.ipynb#2)
+[2. Data Quality Assessment](https://nbviewer.jupyter.org/github/shanxingg/ML_Predicting_Appointment_NoShows/blob/master/.ipynb_checkpoints/Medical_Appointment_NoShows-checkpoint.ipynb#2)
  - Check Missing Values
  - Check Duplicated Values
  - Check Category Variables
  - Check Numerical Variables
 
-[3. Exploratory Data Analysis and Feature Selection](https://nbviewer.jupyter.org/github/shanxingg/ML_Predicting_Appointment_NoShows/blob/master/Medical_Appointment_NoShows.ipynb#3)
+[3. Exploratory Data Analysis and Feature Selection](https://nbviewer.jupyter.org/github/shanxingg/ML_Predicting_Appointment_NoShows/blob/master/.ipynb_checkpoints/Medical_Appointment_NoShows-checkpoint.ipynb#3)
  - Exploring on "ScheduledDay" and "AppointmentDay"
  - Exploring on Given Binary Dummy Variables
  - Exploring on "Neighbourhood"
@@ -32,13 +32,13 @@ In this analysis report, I performed data exploratory analysis to explore the re
  - Exploring on "Gender"
  - Exploring on "PatientId"
 
-[4. Building Models on Imbalanced Data](https://nbviewer.jupyter.org/github/shanxingg/ML_Predicting_Appointment_NoShows/blob/master/Medical_Appointment_NoShows.ipynb#4)
+[4. Building Models on Imbalanced Data](https://nbviewer.jupyter.org/github/shanxingg/ML_Predicting_Appointment_NoShows/blob/master/.ipynb_checkpoints/Medical_Appointment_NoShows-checkpoint.ipynb#4)
  - Transforming the Data Set
  - Define Feature Matrix and Target Array
  - Prepare Data for Model Training
  - Train Model - Logistic Regression
 
-[5. Building Models on Balanced Data](https://nbviewer.jupyter.org/github/shanxingg/ML_Predicting_Appointment_NoShows/blob/master/Medical_Appointment_NoShows.ipynb#5)
+[5. Building Models on Balanced Data](https://nbviewer.jupyter.org/github/shanxingg/ML_Predicting_Appointment_NoShows/blob/master/.ipynb_checkpoints/Medical_Appointment_NoShows-checkpoint.ipynb#5)
  - Create Balanced Data Set
  - Prepare Data for Model Training
  - Logistic Regression
@@ -48,16 +48,16 @@ In this analysis report, I performed data exploratory analysis to explore the re
  - Extra Trees Classifier
  - K-Nearest Neighbors Classifier
 
-[6. Conclusion](https://nbviewer.jupyter.org/github/shanxingg/ML_Predicting_Appointment_NoShows/blob/master/Medical_Appointment_NoShows.ipynb#6)
+[6. Conclusion](https://nbviewer.jupyter.org/github/shanxingg/ML_Predicting_Appointment_NoShows/blob/master/.ipynb_checkpoints/Medical_Appointment_NoShows-checkpoint.ipynb#6)
  - Result Summary
  - Features Importance
  - Interesting Findings
 
-[7. Limitations](https://nbviewer.jupyter.org/github/shanxingg/ML_Predicting_Appointment_NoShows/blob/master/Medical_Appointment_NoShows.ipynb#7)
+[7. Limitations](https://nbviewer.jupyter.org/github/shanxingg/ML_Predicting_Appointment_NoShows/blob/master/.ipynb_checkpoints/Medical_Appointment_NoShows-checkpoint.ipynb#7)
 
-[8. Future Work](https://nbviewer.jupyter.org/github/shanxingg/ML_Predicting_Appointment_NoShows/blob/master/Medical_Appointment_NoShows.ipynb#8)
+[8. Future Work](https://nbviewer.jupyter.org/github/shanxingg/ML_Predicting_Appointment_NoShows/blob/master/.ipynb_checkpoints/Medical_Appointment_NoShows-checkpoint.ipynb#8)
 
-[9. Reference](https://nbviewer.jupyter.org/github/shanxingg/ML_Predicting_Appointment_NoShows/blob/master/Medical_Appointment_NoShows.ipynb#9)
+[9. Reference](https://nbviewer.jupyter.org/github/shanxingg/ML_Predicting_Appointment_NoShows/blob/master/.ipynb_checkpoints/Medical_Appointment_NoShows-checkpoint.ipynb#9)
 <br><br>
 
 
